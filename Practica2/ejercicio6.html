@@ -4,10 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>El primer script</title>
 <!--Esta linia sirve para llamar al arichivo js y ejecutarlo-->
-<script type="text/javascript" src="ejercicio3.js">
+<script type="text/javascript">
+    function hora(){
+        const hora =  new Date();
+        if(hora.getHours < 12){
+            alert('Buenos dias son '+ hora.toLocaleTimeString());
+        }else{
+            alert('Buenas tardes son '+ hora.toLocaleTimeString());
+        }
+    }
 </script>
 </head>
 <body>
-    
+    <input type="button" onclick="hora()">
 </body>
 </html>
