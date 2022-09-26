@@ -7,7 +7,7 @@
 <script type="text/javascript">
     function hora(){
         const hora =  new Date();
-        if(hora.getHours < 12){
+        if(hora.getHours() > 8 && hora.getHours() < 14){
             alert('Buenos dias son '+ hora.toLocaleTimeString());
         }else{
             alert('Buenas tardes son '+ hora.toLocaleTimeString());
