@@ -4,11 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>El primer script</title>
 <!--Esta linia sirve para llamar al arichivo js y ejecutarlo-->
-<script type="text/javascript" src="ejercicio2.js"></script>
+<script type="text/javascript" src="ejercicio2.js">
+</script>
 </head>
 <body>
-<!--la etiqueta nonscript muestra un mensaje si nuestro navegador tiene desactivado el javaescript-->
-<noscript>Esta pagina requiere el uso de JavaScript y parece que esta desactivado</noscript>
-    <p></p>
+    <form id="formularioDni">
+        <p>Dni: <input id="dni" type="text" name="dni" size="40"></p>
+        <p>
+          <input type="submit" value="Enviar" onclick="enviar()">
+          <input type="reset" value="Borrar">
+        </p>
+      </form>    
 </body>
 </html>

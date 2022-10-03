@@ -5,17 +5,21 @@
 <title>El primer script</title>
 <!--Esta linia sirve para llamar al arichivo js y ejecutarlo-->
 <script type="text/javascript">
-    function hora(){
-        const hora =  new Date();
-        if(hora.getHours() > 8 && hora.getHours() < 14){
-            alert('Buenos dias son '+ hora.toLocaleTimeString());
-        }else{
-            alert('Buenas tardes son '+ hora.toLocaleTimeString());
-        }
+    window.onload=function()
+    {
+
+        var elemento=document.getElementById("enlace");
+
+        elemento.onmouseover = function(e) {
+            // El contenido de esta funcion se ejecutara cuanso el mouse
+
+            // pase por encima del elemento
+            alert('es un hipervinculo');
+        };
     }
 </script>
 </head>
 <body>
-    <input type="button" onclick="hora()">
+    <a id="enlace"  href="https://es.wikipedia.org/wiki/Wikipedia:Portada">enlace</a>
 </body>
 </html>

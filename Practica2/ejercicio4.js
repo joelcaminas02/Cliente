@@ -1,4 +1,4 @@
-myExternalWindow = window.open("file:///home/INFORMATICA/alu10471923/Escriptori/Cliente/Practica2/ejercicio4.html", "myWindowName", "resizable");
+myExternalWindow = window.open("ejercicio4.html", "myWindowName", "resizable");
 var es_explorer = navigator.userAgent.toLowerCase().indexOf('mozilla') > -1;
     if(es_explorer){
         myExternalWindow.resizeTo(500, 500);
