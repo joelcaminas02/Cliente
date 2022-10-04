@@ -1,19 +1,27 @@
+HTML:
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>El primer script</title>
-<!--Esta linia sirve para llamar al arichivo js y ejecutarlo-->
-<script type="text/javascript" src="ejercicio2.js">
+<!-- Añandimos el link a nuestro Script de Js-->
+<script src="ejercicio2.js">
 </script>
 </head>
+
 <body>
-    <form id="formularioDni">
-        <p>Dni: <input id="dni" type="text" name="dni" size="40"></p>
-        <p>
-          <input type="submit" value="Enviar" onclick="enviar()">
-          <input type="reset" value="Borrar">
-        </p>
-      </form>    
+<!-- noscript sirve para cuando el navegador no acepta JavaScript pues sale el mensaje de no habilitado que hemos escrito
+pero si, si lo tiene habilitado el navegador saldra el Js y este mensaje de nosrcipt se ocultara-->
+<noscript>
+Hola, tu navegador no tiene habilitado JavaScript, porfavor habilitalo.
+</noscript>
+
+<form id="formulario">
+<p>
+DNI: <input type="text" name="dni" id="dni">
+</p>
+<input type="submit" value="ENVIAR">
+</form>
+
 </body>
 </html>
