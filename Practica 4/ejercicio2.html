@@ -4,20 +4,29 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Ejercicio 1</title>
 
-    <script type="text/javascript" src="ejercicio1.js"></script>
+    <script type="text/javascript" src="ejercicio2.js"></script>
   </head>
 
   <body>
   <!--Esta línea se va a mostrar cuando no esté activado el uso de JS en el navegador-->
     <div id="padre">
     <p id="primer">Este es el primer parrafo </p>
+    <h1>ANIMALES</h1>
+    <ul id="lista">
+        <li id="leon">leon</li>
+        <li id="pantera">pantera</li>
+        <li>jirafa</li>
+    </ul>
     <p>Otro párrafo.</p>
   </div>
+
         <button  onclick="añadir()" >Añadir parrafo</button><br>
         <button  onclick="insertar()" >Insertar parrafo</button><br>
         <button  onclick="reemplazar()" >Reemplazar parrafo</button><br>
         <button  onclick="borrar()" >Borrar párrafo</button><br>
         <button  onclick="clonar()" >Clonar div</button><br>
+        <button  onclick="sublistaLeon()" >Crear sublista dentro de leon</button><br>
+        <button  onclick="sublistaPantera()" >Crear sublista dentro de pantera</button><br>
    
   </body>
 </html>
