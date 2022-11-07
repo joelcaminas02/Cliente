@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', function(){
 function funcion(evento){
     evento.preventDefault();
     var clave = document.getElementById('dni').value;
-    if(clave.length == 9){
-        document.write('La clave es correcta');
+    if (clave.length == 9) {
+    alert('La clave es válida');
     }else{
-        document.write('Error');
+    alert('La clave NO es válida');
     }
     this.submit();
 }
