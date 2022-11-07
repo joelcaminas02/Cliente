@@ -20,5 +20,9 @@ function validar(e){
     }
 }
 function validarForm(){
-    
+    if(/^\d{9}$/.test(document.getElementById('telefono').value) == false){
+        alert('no has puesto 9 digitos')
+    }else if(/^\d{9}$/.test(document.getElementById('dni').value)){
+        alert('no has puesto nada ')
+    }
 }
